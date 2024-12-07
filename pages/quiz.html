@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+      <!-- Box Icons -->
+      <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <title>Quiz</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="l-header bg-white shadow-sm fixed-top">
+        <nav class="navbar navbar-expand-lg container">
+            <a class="navbar-brand fw-bold text-primary" href="../index.html">CHEIKH ROUHOU Omar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="parcours.html">Parcours</a></li>
+                    <li class="nav-item"><a class="nav-link" href="competences.html">Compétences</a></li>
+                    <li class="nav-item"><a class="nav-link" href="stages.html">Stages</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="formations.html">Formations</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="quiz.html">Quiz</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container py-5 mt-5">
+        <h1 class="text-primary text-center mb-4">Quiz</h1>
+        <form id="quiz-form" class="bg-light p-4 rounded shadow-sm">
+            <div class="mb-4">
+                <h5>Question 1: Quel élément HTML est utilisé pour insérer un lien hypertexte ?</h5>
+                <div class="form-check">
+                    <input type="radio" name="q1" id="q1-a" value="A" class="form-check-input">
+                    <label for="q1-a" class="form-check-label">link</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" name="q1" id="q1-b" value="B" class="form-check-input">
+                    <label for="q1-b" class="form-check-label">a</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" name="q1" id="q1-c" value="C" class="form-check-input">
+                    <label for="q1-c" class="form-check-label">href</label>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <h5>Question 2: Quelle propriété CSS est utilisée pour changer la couleur du texte ?</h5>
+                <div class="form-check">
+                    <input type="radio" name="q2" id="q2-a" value="A" class="form-check-input">
+                    <label for="q2-a" class="form-check-label">color</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" name="q2" id="q2-b" value="B" class="form-check-input">
+                    <label for="q2-b" class="form-check-label">text-color</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" name="q2" id="q2-c" value="C" class="form-check-input">
+                    <label for="q2-c" class="form-check-label">background-color</label>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <h5>Question 3: Quel attribut HTML est utilisé pour spécifier une image ?</h5>
+                <div class="form-check">
+                    <input type="radio" name="q3" id="q3-a" value="A" class="form-check-input">
+                    <label for="q3-a" class="form-check-label">src</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" name="q3" id="q3-b" value="B" class="form-check-input">
+                    <label for="q3-b" class="form-check-label">alt</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" name="q3" id="q3-c" value="C" class="form-check-input">
+                    <label for="q3-c" class="form-check-label">image</label>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <h5>Question 4:Quelle balise HTML est utilisée pour créer une liste non ordonnée ?</h5>
+                <div class="form-check">
+                    <input type="radio" name="q4" id="q4-a" value="A" class="form-check-input">
+                    <label for="q4-a" class="form-check-label">ul</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" name="q4" id="q4-b" value="B" class="form-check-input">
+                    <label for="q4-b" class="form-check-label">ol</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" name="q4" id="q4-c" value="C" class="form-check-input">
+                    <label for="q4-c" class="form-check-label">list</label>
+                </div>
+            </div>
+            <div class="mb-4">
+                <h5>Question 5: Quelle propriété CSS est utilisée pour centrer un élément horizontalement dans une page ?</h5>
+                <div class="form-check">
+                    <input type="radio" name="q5" id="q5-a" value="A" class="form-check-input">
+                    <label for="q5-a" class="form-check-label">text-align: center;</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" name="q5" id="q5-b" value="B" class="form-check-input">
+                    <label for="q5-b" class="form-check-label">margin: auto;</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" name="q5" id="q5-c" value="C" class="form-check-input">
+                    <label for="q5-c" class="form-check-label">display: block;</label>
+                </div>
+                <div class="mb-4">
+                    <h5>Question 6: Quelle balise HTML est utilisée pour insérer une ligne horizontale ?</h5>
+                    <div class="form-check">
+                        <input type="radio" name="q6" id="q6-a" value="A" class="form-check-input">
+                        <label for="q6-a" class="form-check-label">line</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" name="q6" id="q6-b" value="B" class="form-check-input">
+                        <label for="q6-b" class="form-check-label">hr</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" name="q6" id="q6-c" value="C" class="form-check-input">
+                        <label for="q6-c" class="form-check-label">br</label>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <h5>Question 7: Quel sélecteur CSS cible tous les éléments d’une page ?</h5>
+                    <div class="form-check">
+                        <input type="radio" name="q7" id="q7-a" value="A" class="form-check-input">
+                        <label for="q7-a" class="form-check-label">*</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" name="q7" id="q7-b" value="B" class="form-check-input">
+                        <label for="q7-b" class="form-check-label">#all</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" name="q7" id="q7-c" value="C" class="form-check-input">
+                        <label for="q7-c" class="form-check-label">body</label>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <h5>Question 8: Quelle unité CSS est relative à la taille de la police par défaut ?</h5>
+                    <div class="form-check">
+                        <input type="radio" name="q8" id="q8-a" value="A" class="form-check-input">
+                        <label for="q8-a" class="form-check-label">px</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" name="q8" id="q8-b" value="B" class="form-check-input">
+                        <label for="q8-b" class="form-check-label">%</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" name="q8" id="q8-c" value="C" class="form-check-input">
+                        <label for="q8-c" class="form-check-label">em</label>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <h5>Question 9: Quel attribut HTML permet d’ouvrir un lien dans un nouvel onglet ?</h5>
+                    <div class="form-check">
+                        <input type="radio" name="q9" id="q9-a" value="A" class="form-check-input">
+                        <label for="q9-a" class="form-check-label">newtab</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" name="q9" id="q9-b" value="B" class="form-check-input">
+                        <label for="q9-b" class="form-check-label">target="_blank"</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" name="q9" id="q9-c" value="C" class="form-check-input">
+                        <label for="q9-c" class="form-check-label">open="_new"</label>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <h5>Question 10: Quelle propriété CSS est utilisée pour ajouter de l’espace à l’intérieur d’un élément ?</h5>
+                    <div class="form-check">
+                        <input type="radio" name="q10" id="q10-a" value="A" class="form-check-input">
+                        <label for="q10-a" class="form-check-label">margin</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" name="q10" id="q10-b" value="B" class="form-check-input">
+                        <label for="q10-b" class="form-check-label">padding</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" name="q10" id="q10-c" value="C" class="form-check-input">
+                        <label for="q10-c" class="form-check-label">border</label>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more questions similarly up to Question 10 -->
+
+            <button type="submit" class="btn btn-primary mt-3">Soumettre</button>
+        </form>
+        <div id="quiz-result" class="mt-4 text-center">
+            <p class="text-success"></p>
+            <ul id="correct-answers" class="list-group d-none"></ul>
+        </div>
+    </main>
+
+    <footer class="text-bg-primary p-3">
+        <div class="container text-center">
+          <p class="mb-0">© 2024 Omar Cheikh Rouhou. Tous droits réservés.</p>
+          <div class="footer__social">
+            <a href="#" class="footer__icon"><i class='bx bxl-facebook' style="color: white;"></i></a>
+            <a href="#" class="footer__icon"><i class='bx bxl-instagram'style="color: white;"></i></a>
+        </div>
+        </div>
+      </footer>
+
+    <script >
+        const quizForm = document.getElementById("quiz-form");
+    const result = document.getElementById("quiz-result");
+    const correctAnswersList = document.getElementById("correct-answers");
+
+    quizForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        let score = 0;
+        const correctAnswers = {
+            q1: "B",
+            q2: "A",
+            q3: "A",
+            q4: "A",
+            q5: "B",
+            q6: "B",
+            q7: "A",
+            q8: "C",
+            q9: "B",
+            q10: "B"
+        };
+
+        const userAnswers = {};
+        for (let question in correctAnswers) {
+            userAnswers[question] = document.querySelector(`input[name="${question}"]:checked`)?.value;
+        }
+
+        correctAnswersList.innerHTML = "";
+        for (let question in correctAnswers) {
+            if (userAnswers[question] === correctAnswers[question]) {
+                score++;
+            } else {
+                const li = document.createElement("li");
+                li.textContent = `Question ${question.replace('q', '')}: La bonne réponse est ${correctAnswers[question]}`;
+                li.classList.add("list-group-item", "list-group-item-danger");
+                correctAnswersList.appendChild(li);
+            }
+        }
+
+        result.querySelector("p").textContent = `Votre score est de ${score}/${Object.keys(correctAnswers).length}.`;
+        correctAnswersList.classList.remove("d-none");
+    });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

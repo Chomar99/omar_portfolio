@@ -1,0 +1,199 @@
+/* ===== VARIABLES CSS ===== */
+:root {
+    --primary-color: hsl(224, 89%, 60%);
+    --secondary-color: hsl(224, 56%, 12%);
+    --background-light: #f8f9fa;
+}
+
+/* ===== CUSTOM STYLES ===== */
+.section-title {
+    font-size: 2rem;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.section-title::after {
+    content: "";
+    width: 60px;
+    height: 3px;
+    background-color: var(--primary-color);
+    display: block;
+    margin: 1rem auto 0;
+}
+
+.footer {
+    font-size: 0.875rem;
+}
+
+.about__img {
+    justify-self: center;
+  }
+  .about__img img {
+    width: 200px;
+    border-radius: 0.5rem;
+  }
+  /* Personnalisation si nécessaire */
+  body {
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh; /* La page doit occuper toute la hauteur de la fenêtre */
+}
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+main {
+    flex: 1; /* Le contenu principal prend l'espace disponible entre le header et le footer */
+}
+
+/* ===== STYLES HOME ===== */
+.home {
+    text-align: left; /* Aligne le texte à gauche */
+    font-size: 2.5rem; /* Rend le texte plus grand */
+    margin: 2rem 0; /* Ajoute un peu d'espace autour */
+}
+.nav-link.active {
+  position: relative;
+  font-weight: bold; /* Rend le texte en gras pour l'élément actif */
+  color: var(--primary-color) !important; /* Met en évidence la couleur de l'élément actif */
+}
+
+.nav-link.active::after {
+  content: ""; /* Pseudo-élément pour la ligne */
+  position: absolute;
+  bottom: -5px; /* Place la ligne juste en dessous du texte */
+  left: 0;
+  width: 100%; /* La ligne s'étend sur toute la largeur du lien */
+  height: 3px; /* Épaisseur de la ligne */
+  background-color: var(--primary-color); /* Couleur de la ligne */
+}
+
+
+/* ===== STYLES À PROPOS ===== */
+.about-center {
+  min-height: 100vh; /* La section occupe toute la hauteur de la fenêtre */
+  display: flex; /* Utilisation de Flexbox */
+  justify-content: center; /* Centrer horizontalement */
+  align-items: center; /* Centrer verticalement */
+  text-align: center; /* Centrer le texte */
+}
+
+
+.about__img img {
+    width: 200px;
+    border-radius: 0.5rem;
+}
+/*===== HOME =====*/
+.home {
+    position: relative;
+    row-gap: 5rem;
+    padding: 4rem 0 5rem;
+  }
+  .home__data {
+    align-self: center;
+  }
+  .home__title {
+    font-size: var(--big-font-size);
+    margin-bottom: var(--mb-5);
+  }
+  .home__title-color {
+    color: #007bff;
+  }
+  .home__social {
+    display: flex;
+    flex-direction: column;
+  }
+  .home__social-icon {
+    width: max-content;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #001555;
+  }
+  .home__social-icon:hover {
+    color: #007bff;
+  }
+  .home__img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 260px;
+  }
+  
+/* ===== FOOTER =====*/
+.timeline {
+  position: relative;
+  margin: 50px auto;
+  padding: 20px 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.timeline:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100%;
+  background: #ddd;
+}
+
+.timeline-item {
+  position: relative;
+  margin: 20px 0;
+  padding-left: 50%;
+}
+
+.timeline-item:nth-child(even) {
+  padding-left: 0;
+  padding-right: 50%;
+}
+
+.timeline-item .content {
+  position: relative;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item:nth-child(even) .content {
+  margin-left: auto;
+}
+
+.timeline-item .icon {
+  position: absolute;
+  top: 20px;
+  left: -30px;
+  width: 60px;
+  height: 60px;
+  background: #007bff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+}
+
+.timeline-item:nth-child(even) .icon {
+  left: auto;
+  right: -30px;
+}
+
+.timeline-item img {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.timeline-item h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+.timeline-item p {
+  margin: 0;
+}
